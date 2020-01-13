@@ -1,3 +1,9 @@
-# react-pokemon-hangman
+# React-Pokemon-Hangman
 
-# React Pokemon Hangman with react hooks, styled components, Pokemon API
+## Website Live
+
+later
+
+## Coding
+
+React Pokemon Hangman with react hooks, styled components, Pokemon API
