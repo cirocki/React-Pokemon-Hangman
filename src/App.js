@@ -1,11 +1,19 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
+import Intro from "./views/Intro";
+import Game from "./views/Game";
 
 function App() {
+  // START GAME/HIDE INTRO
+  const [start, setStart] = useState(false);
+  const handleStart = e => {
+    setStart(true);
+    console.log("game started");
+  };
+
   return (
     <div className="App">
-      <h1>hangman</h1>
+      {start ? <Game /> : <Intro startFunction={handleStart} />}
     </div>
   );
 }
